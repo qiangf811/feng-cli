@@ -8,17 +8,21 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./main.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/qiangf811/farst-cache.git"
-  },
   "bin": {
-    "ds": "./main.js"
+    "feng": "./main.js"
   },
   "keywords": [
     "cli"
   ],
   "author": "qiangfeng",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiangf811/feng-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qiangf811/feng-cli/issues"
+  },
+  "homepage": "https://github.com/qiangf811/feng-cli#readme",
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.2",
