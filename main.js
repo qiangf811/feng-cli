@@ -31,33 +31,28 @@ program
         }
       ])
       .then(answers => {
-        download(
-          'https://github.com:qiangf811/react-web',
-          name,
-          { clone: true },
-          err => {
-            const spinner = ora('正在下载模板...')
-            spinner.start()
-            if (!err) {
-              spinner.succeed()
-              const meta = {
-                name,
-                description: answers.description,
-                author: answers.author
-              }
-              const fileName = `${name}/package.json`
-              if (fs.existsSync(fileName)) {
-                const content = fs.readFileSync(fileName).toString()
-                const result = handlebars.compile(content)(meta)
-                fs.writeFileSync(fileName, result)
-              }
-              console.log(symbols.success, chalk.green('项目初始化完成'))
-            } else {
-              spinner.fail()
-              console.log(symbols.error, chalk.red(`拉取远程仓库失败${err}`))
+        const spinner = ora('正在下载模板...')
+        spinner.start()
+        download('https://github.com:qiangf811/react-web#master', name, { clone: true }, err => {
+          if (!err) {
+            spinner.succeed()
+            const meta = {
+              name,
+              description: answers.description,
+              author: answers.author
             }
+            const fileName = `${name}/package.json`
+            if (fs.existsSync(fileName)) {
+              const content = fs.readFileSync(fileName).toString()
+              const result = handlebars.compile(content)(meta)
+              fs.writeFileSync(fileName, result)
+            }
+            console.log(symbols.success, chalk.green('项目初始化完成'))
+          } else {
+            spinner.fail()
+            console.log(symbols.error, chalk.red(`拉取远程仓库失败${err}`))
           }
-        )
+        })
       })
   })
 // 解析命令行
