@@ -1,0 +1,45 @@
+{
+  "name": "feng-cli",
+  "version": "0.0.1-1",
+  "private": false,
+  "description": "webapp program cli",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./main.js"
+  },
+  "bin": {
+    "winning": "./bin/winning.js"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "qiangfeng",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiangf811/feng-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qiangf811/feng-cli/issues"
+  },
+  "homepage": "https://github.com/qiangf811/feng-cli#readme",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "didyoumean": "^1.2.1",
+    "download-git-repo": "^2.0.0",
+    "execa": "^1.0.0",
+    "handlebars": "^4.1.2",
+    "import-global": "^0.1.0",
+    "inquirer": "^6.3.1",
+    "log-symbols": "^3.0.0",
+    "minimist": "^1.2.0",
+    "ora": "^3.4.0",
+    "semver": "^6.1.1",
+    "slash": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=8.9"
+  }
+}

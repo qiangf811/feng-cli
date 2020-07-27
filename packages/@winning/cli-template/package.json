@@ -1,0 +1,23 @@
+{
+  "name": "@winning/cli-template",
+  "version": "0.0.1-1",
+  "description": "template for winning-cli",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiangf811/feng-cli.git"
+  },
+  "keywords": [
+    "winning",
+    "cli"
+  ],
+  "author": "qiangfeng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qiangf811/feng-cli/issues"
+  },
+  "homepage": "https://github.com/qiangf811/feng-cli/packages/@winning/cli-template#readme"
+}

@@ -1,15 +1,12 @@
 {
-  "name": "feng-cli",
-  "version": "0.0.1",
+  "name": "winning-cli",
+  "version": "0.0.1-1",
   "private": false,
   "description": "webapp program cli",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "boot": "node scripts/bootstrap.js",
     "start": "node ./main.js"
-  },
-  "bin": {
-    "feng": "./main.js"
   },
   "keywords": [
     "cli"
@@ -24,13 +21,10 @@
   },
   "homepage": "https://github.com/qiangf811/feng-cli#readme",
   "license": "MIT",
-  "dependencies": {
-    "chalk": "^2.4.2",
-    "commander": "^2.20.0",
-    "download-git-repo": "^2.0.0",
-    "handlebars": "^4.1.2",
-    "inquirer": "^6.3.1",
-    "log-symbols": "^3.0.0",
-    "ora": "^3.4.0"
+  "engines": {
+    "node": ">=8.9"
+  },
+  "devDependencies": {
+    "lerna": "^3.15.0"
   }
 }

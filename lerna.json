@@ -1,0 +1,9 @@
+{
+  "npmClient": "yarn",
+  "useWorkspaces": false,
+  "version": "0.0.1",
+  "packages": [
+    "packages/@winning/tempalte",
+    "packages/@winning/cli"
+  ]
+}
