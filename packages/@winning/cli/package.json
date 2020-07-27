@@ -34,7 +34,7 @@
     "import-global": "^0.1.0",
     "inquirer": "^6.3.1",
     "log-symbols": "^3.0.0",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.3",
     "ora": "^3.4.0",
     "semver": "^6.1.1",
     "slash": "^3.0.0"
