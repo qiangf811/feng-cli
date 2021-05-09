@@ -30,7 +30,7 @@
     "didyoumean": "^1.2.1",
     "download-git-repo": "^2.0.0",
     "execa": "^1.0.0",
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.7.7",
     "import-global": "^0.1.0",
     "inquirer": "^6.3.1",
     "log-symbols": "^3.0.0",
