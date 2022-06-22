@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/qiangf811/feng-cli/packages/@winning/cli-init#readme",
   "dependencies": {
-    "async": "^3.0.1",
+    "async": "^3.2.2",
     "chalk": "^2.4.2",
     "commander": "^2.20.0",
     "consolidate": "^0.15.1",
